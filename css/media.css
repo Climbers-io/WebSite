@@ -1,0 +1,119 @@
+:root {
+    --main-dark-color: #021126;
+    --main-ligth-color: #FFF;
+    --second-color: #0770E3;
+    --shadow-text : #042759;
+    font-family: "Inter", sans-serif;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+    .navbar-text {
+        font-size: 28px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+    .navbar-list {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger-close {
+        display: block;
+    }
+    .cta-text {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .cta-button {
+        font-size: 16px;
+        width: 202px;
+        height: 36px;
+        border-radius: 10px;
+    }
+
+    #chi-siamo{
+      padding: 100px 0;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col{
+      width : 100%;
+      height: auto;
+    }
+
+    .text-info{
+      font-size: 32px;
+      padding: 34px 24px;
+    }
+
+    .medium-text{
+      font-size: 36px;
+    }
+
+
+    .container-about{
+      display: block;
+      border-radius: 25px;
+      height: auto;
+      background-color: var(--main-ligth-color);
+      color: var(--main-dark-color);
+      
+    }
+    .col-title{
+      height: auto;
+      text-align: center;
+    }
+    
+    .container-vantaggi{
+      display: block;
+      background-color: var(--main-dark-color);
+      color: var(--main-ligth-color);
+      width: 70%;
+      border-radius: 25px;
+      height: auto;
+    }
+
+    #vantaggi{
+      padding: 100px 0;
+      height: auto;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .footer{
+      display: block;
+    }
+}
+
+
+@media only screen and (max-width: 728px) {
+
+    .col-title{
+      text-align: left;
+      padding: 34px 24px;
+       height: auto;
+    }
+
+    .container-about{
+      height: auto;
+      width: 464px;
+    }
+
+    .container-vantaggi{
+      height: auto;
+      width: 464px;
+    }
+    .text-info{
+      font-size: 26px;
+    }
+
+    .medium-text{
+      font-size: 26px;
+    }
+
+}

@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+:root {
+    --main-dark-color: #021126;
+    --main-ligth-color: #FFF;
+    --second-color: #0770E3;
+    --shadow-text : #042759;
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Base Settings */
+
+.background-dark {
+    z-index: 100;
+    color: var(--main-dark-color);
+    background-color: var(--main-ligth-color);
+    box-shadow: 0 3px 1rem 0.3px rgba(0, 0, 0, .1);
+}
+
+.dark-section {
+    color: var(--main-ligth-color);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-dark-color);
+}
+
+.dark-text {
+    color: var(--main-dark-color);
+}
+
+.ligth-text {
+    color: var(--main-ligth-color);
+}
+
+
+.ligth-section {
+    color: var(--main-dark-color);
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-ligth-color);
+}
+
+.desktop-section {
+    max-width: auto;
+    max-height: max-content;
+}
+
+.big-text{
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.small-text{
+    font-weight: 400;
+    font-size: 40px;
+    inline-size: 45px;
+}
+
+.medium-text{
+  font-weight : 600;
+}
+
+.second-color{
+  color : var(--second-color);
+}
+
+
+/* Home Section */
+
+
+/* NavBar Section */
+
+.navbar {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.navbar-text {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.navbar-list ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 42px;
+}
+
+
+/* End NavBar Section */
+
+#home-section {
+    width: 100%;
+    background-image: url("../img/world.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Cta */
+
+.cta-text {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1.5%;
+    line-height: 50px;
+    text-align: center;
+}
+
+.cta-container {
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.cta-button {
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--second-color);
+}
+
+
+/* OffCanvas Section */
+
+.off-canvas {
+    z-index: -1;
+    max-width: 992px;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    border-radius: 0 0 30px 30px;
+    background: #FFF;
+}
+
+.off-canvas ul {
+    padding: 0 0 25px 25px;
+    position: absolute;
+    top: 100px;
+}
+
+.off-canvas li {
+    list-style-type: none;
+    padding: 0 0 50px 0;
+}
+
+.off-canvas a {
+    color: var(--main-dark-color);
+    font-weight: 800;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+
+/* End Home Section */
+
+/* Cosa è Climbers */
+
+#chi-siamo{
+  flex-direction: row;
+  display: flex;
+}
+
+.col{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-about{
+    background-color: var(--shadow-text);
+    color: var(--main-ligth-color);
+    height: 464px;
+    border-radius: 25px;
+    width: 464px;
+
+}
+
+.text-info{
+
+    font-size: 36px;
+    width: 100%;
+    height: 100%;
+    padding: 60px 45px;
+    margin: auto;
+}
+
+/* Vantaggi */
+
+#vantaggi{
+  flex-direction: row;
+  display: flex;
+}
+
+.container-vantaggi{  
+    background-color: var(--main-ligth-color); 
+    color: var(--shadow-text);
+    height: 464px;
+    border-radius: 25px;
+    width: 464px;
+}
+
+
+
+/* Footer */
+
+.footer {
+    display: none;
+    color: var(--main-ligth-color);
+    width: 100%;
+    height: 10vh;
+    background-color: var(--main-dark-color);   
+}
+
+.container-icon{
+      display: flex;
+      height: 100%;
+      width: 100%;
+}
+
+hr{
+  margin: 0 10%;
+  border-top: 1px solid white;
+}  
+
+
+.col-icon{
+  height: 100%;
+  width: 33%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*social media icon*/
+.facebook-icon{
+  background-image: url("../icon/facebook.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+  .twitter-icon{
+  background-image: url('../icon/twitter.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+  .instagram-icon{
+  background-image: url('../icon/instagram.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.end{
+  height: 1vh;
+  width: 100%;
+}

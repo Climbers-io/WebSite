@@ -125,6 +125,10 @@ a{
 #home-section {
     width: 100%;
     background-image: url("../img/world.svg");
+    transition: height 1000000s ease;
+    -webkit-transition: height 1000000s ease;
+    -moz-transition: height 1000000s ease;
+    -o-transition: height 1000000s ease;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
